@@ -4,6 +4,8 @@ var greet = function(greeting, name) {
 };
 greet("Hello", "Jake"); //"Hello, Jake"
 
+
+
 // our first curry
 var greetCurried = function(greeting) {
   	return function(name) {
@@ -19,6 +21,8 @@ greetHello("Tom"); //"Hello, Tom"
 // can also call the original curried function directly
 greetCurried("Hi there")("Howard"); //"Hi there, Howard"
 greetCurried("Sup")("Emma"); //"Sup, Emma"
+
+
 
 // implementing a much deeper curry
 var greetDeeplyCurried = function(greeting) {
@@ -39,6 +43,8 @@ sayHello(".")("Heidi"); //"Hello, Heidi."
 
 var askHello = sayHello("?");
 askHello("Heidi"); // Hello, Heidi?
+
+
 
 // a very common interviw question "output of add(2)(3)(5) ?"
 var add = function(x) {
