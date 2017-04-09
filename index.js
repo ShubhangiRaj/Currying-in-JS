@@ -39,3 +39,15 @@ sayHello(".")("Heidi"); //"Hello, Heidi."
 
 var askHello = sayHello("?");
 askHello("Heidi"); // Hello, Heidi?
+
+// a very common interviw question "output of add(2)(3)(5) ?"
+var add = function(x) {
+    return function(y) { 
+    	return function(z){
+    		return x + y + z;
+    	};
+    };
+};
+var a = add(2)(3)(5);
+console.log(a); // 10
+
